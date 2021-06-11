@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${ 'Status ' + status}"></title>
+</head>
+<body>
+	<h1 th:text="${status}"></h1>
+	<img alt="Internal Error Image" th:src="@{image/error/500.png}">
+	<h2 th:text="${error}"></h2>
+	<p th:text="${timestamp}"></p>
+
+	<!-- error message description: -->
+	<!-- 	<p th:text="${message}"></p> -->
+
+	<!-- exception trace: -->
+	<!-- 	<hr> -->
+	<!-- 	<p th:text="${trace}"></p> -->
+</body>
+</html>

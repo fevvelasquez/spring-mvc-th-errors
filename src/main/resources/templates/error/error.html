@@ -6,11 +6,15 @@
 </head>
 <body>
 	<h1 th:text="${status}"></h1>
-	<img alt="404 Error Image" th:src="@{image/error/404.png}">
+	<img alt="Error Image" th:src="@{image/error/error.png}">
 	<h2 th:text="${error}"></h2>
 	<p th:text="${timestamp}"></p>
 
-	<!-- path not found: -->
-	<!-- 	<p th:text="${path}"></p> -->
+	<!-- error message description: -->
+	<!-- 	<p th:text="${message}"></p> -->
+
+	<!-- exception trace: -->
+	<!-- 	<hr> -->
+	<!-- 	<p th:text="${trace}"></p> -->
 </body>
 </html>

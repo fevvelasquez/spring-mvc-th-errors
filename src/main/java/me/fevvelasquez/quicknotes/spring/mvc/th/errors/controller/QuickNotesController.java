@@ -31,4 +31,16 @@ public class QuickNotesController {
 	public String getError500() {
 		return "resource-not-mapped";
 	}
+
+	/**
+	 * 
+	 * Get Arithmetic Exception<br>
+	 * 
+	 */
+	@GetMapping("/arithmetic-exception")
+	public String getArithmeticException() {
+		@SuppressWarnings("unused")
+		int i = 3 / 0;
+		return "resource-not-mapped";
+	}
 }
